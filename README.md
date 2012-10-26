@@ -2,6 +2,7 @@
 
 PullRequestFive's Entry...
 
+Might want to use: https://github.com/craftyjs/Crafty
 
 ## Ideas
 
@@ -20,3 +21,8 @@ PullRequestFive's Entry...
    * Fork zelda?!?
    * Salad Zelda!
    * Iron Chef Link?!
+
+ * text based adventure?
+   * Programming based text based adventure?
+
+ * Rogue like game?
