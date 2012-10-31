@@ -1,7 +1,7 @@
 Scavenger.controllers  do
- get :index do
-   render 'index'
- end
+  get :index do
+    render :index
+  end
 
   get :level, :with => :id do
     config = YAML.load_file('config.yml')
