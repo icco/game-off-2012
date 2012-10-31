@@ -1,30 +1,18 @@
-# Game Off 2012
+# Scavenger
 
-PullRequestFive's Entry to https://github.com/blog/1303-github-game-off
+Scavenger is PullRequestFive's Entry to [the 2012 Github game off](https://github.com/blog/1303-github-game-off). The idea is simple, create a scavenger hunt across the internet.
 
-Might want to use: https://github.com/craftyjs/Crafty
+## Inspiration
 
-## Ideas
+ * http://notpron.org/notpron/
+ * https://blog.dropbox.com/2012/05/dropquest-ii-the-future-is-now/
+ * http://web.mit.edu/puzzle/www/
 
-Lots of these ideas could be merged.
+## Spec
 
- * Commit
-   * Like a never ending game of chicken
-   * Multiplayer
-   * Hard to play alone (impossible?)
- * Realamon
-   * Pokemon + Real Animals?
-   * Git mechanics?
- * Music Platformer Game?
- * Post Modern Zelda?
-   * Fork zelda?!?
-   * Salad Zelda!
-   * Iron Chef Link?!
- * text based adventure?
-   * Programming based text based adventure?
- * Rogue like game?
- * First person ascii art exploration game?
-   * Find all of the forks
-   * Explore all of the branches
-   * Clone extermination
- * Game where all you can do is push, pull and clone blocks
+TBD
+
+## Authors
+
+ * Nat Welch - [@icco](http://natwelch.com)
+ * Alex Baldwin - [@alexbaldwin](http://alexbaldw.in)
