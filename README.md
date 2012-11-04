@@ -10,7 +10,11 @@ Scavenger is PullRequestFive's Entry to [the 2012 Github game off](https://githu
 
 ## Spec
 
-TBD
+
+ * Each level is a folder in /levels
+ * we render index.erb
+ * execute rules.rb
+ * include style.css and level.js
 
 ## Authors
 
