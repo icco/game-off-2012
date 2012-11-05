@@ -2,7 +2,12 @@ Scavenger.controllers  do
   layout :main
 
   get :index do
-    render :index
+    if session[:username]
+      user = User.get session[:username]
+      redirect url_for(:level, :id => user.next_level)
+    else
+      render :index
+    end
   end
 
   get :level, :with => :id do
@@ -35,8 +40,13 @@ Scavenger.controllers  do
     auth = auth.info
     logger.push(" Developer: #{auth.inspect}", :devel)
 
-    session[:username] = auth["name"]
-    session[:email] = auth["email"]
+    # TODO: Validate.
+    user = User.create(
+      :name => auth["name"],
+      :email => auth["email"]
+    )
+
+    session[:username] = user.name
 
     redirect "/"
   end
@@ -47,9 +57,13 @@ Scavenger.controllers  do
     auth = auth.info
     logger.push(" Github: #{auth.inspect}", :devel)
 
+    # TODO: Validate.
+    user = User.create(
+      :name => auth["nickname"],
+      :email => auth["email"]
+    )
 
-    session["email"] = auth["email"]
-    session["username"] = auth["nickname"]
+    session[:username] = user.name
 
     redirect "/"
   end
