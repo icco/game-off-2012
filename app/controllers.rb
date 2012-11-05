@@ -6,10 +6,8 @@ Scavenger.controllers  do
   end
 
   get :level, :with => :id do
-    config = YAML.load_file("config.yml")
-    template = config["levels"][params[:id]]
-
-    render :"levels/#{template}"
+    level = Level.get params[:id]
+    render level.template
   end
 
   get :login do
