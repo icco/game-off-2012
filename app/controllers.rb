@@ -10,6 +10,11 @@ Scavenger.controllers  do
     render level.template
   end
 
+  get :leaderboard do
+    # TODO(icco): Query DB to get logged in users progress and top 25 users.
+    render :leaderboard
+  end
+
   get :login do
     if Padrino.env == :development
       redirect "/auth/developer"
