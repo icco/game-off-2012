@@ -1,7 +1,10 @@
 class Level < Struct.new(:name)
-
   def template
     return "../../levels/#{self.name}/index.erb"
+  end
+
+  def pass? params
+    return true
   end
 
   def self.get name

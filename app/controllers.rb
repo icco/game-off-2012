@@ -4,15 +4,42 @@ Scavenger.controllers  do
   get :index do
     if session[:username]
       user = User.get session[:username]
+      logger.info "Redirecting #{user.name.inspect} to #{user.next_level.inspect}."
       redirect url_for(:level, :id => user.next_level)
     else
       render :index
     end
   end
 
+  get :level do
+    redirect :leaderboard
+  end
+
   get :level, :with => :id do
+    user = User.get session[:username]
     level = Level.get params[:id]
+
+    if !user
+      redirect :index
+    elsif !level
+      404
+    end
+
     render level.template
+  end
+
+  post :level, :with => :id do
+    user = User.get session[:username]
+    level = Level.get params[:id]
+
+    if !user
+      redirect :index
+    elsif !level
+      404
+    end
+
+    Progress.succeed(level.name, user.name) if level.pass? params
+    redirect :index
   end
 
   get :leaderboard do
