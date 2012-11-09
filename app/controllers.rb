@@ -20,7 +20,7 @@ Scavenger.controllers  do
     level = Level.get params[:id]
 
     if !user
-      redirect :index
+      redirect '/'
     elsif !level
       404
     end
@@ -33,13 +33,13 @@ Scavenger.controllers  do
     level = Level.get params[:id]
 
     if !user
-      redirect :index
+      redirect '/'
     elsif !level
       404
     end
 
     Progress.succeed(level.name, user.name) if level.pass? params
-    redirect :index
+    redirect '/'
   end
 
   get :leaderboard do
