@@ -10,4 +10,9 @@ class Level < Struct.new(:name)
     # TODO(icco): Remove
     return Level.new name
   end
+
+  def self.all
+    config = YAML.load_file("config.yml")
+    return config["levels"]
+  end
 end
