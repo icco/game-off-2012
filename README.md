@@ -1,5 +1,7 @@
 # Scavenger
 
+ABANDONED.
+
 Scavenger is PullRequestFive's Entry to [the 2012 Github game off](https://github.com/blog/1303-github-game-off). The idea is simple, create a scavenger hunt across the internet.
 
 ## Inspiration
