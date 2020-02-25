@@ -7,7 +7,7 @@ gem 'json'
 gem 'omniauth-github' # https://github.com/intridea/omniauth-github
 gem 'padrino'
 gem 'pg'
-gem 'rake'
+gem 'rake', '>= 12.3.3'
 gem 'shotgun', :group => :developer
 gem 'sinatra-flash', :require => 'sinatra/flash'
 gem 'thin'
