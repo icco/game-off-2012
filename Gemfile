@@ -3,7 +3,7 @@ source :rubygems
 gem 'activerecord', :require => 'active_record'
 gem 'erubis', '~> 2.7.0'
 gem 'gravatar-ultimate' # https://github.com/sinisterchipmunk/gravatar
-gem 'json'
+gem 'json', '>= 2.3.0'
 gem 'omniauth-github' # https://github.com/intridea/omniauth-github
 gem 'padrino'
 gem 'pg'
