@@ -1,11 +1,11 @@
 source :rubygems
 
-gem 'activerecord', :require => 'active_record'
+gem 'activerecord', '>= 3.2.14', :require => 'active_record'
 gem 'erubis', '~> 2.7.0'
 gem 'gravatar-ultimate' # https://github.com/sinisterchipmunk/gravatar
 gem 'json'
 gem 'omniauth-github' # https://github.com/intridea/omniauth-github
-gem 'padrino'
+gem 'padrino', '>= 0.11.0'
 gem 'pg'
 gem 'rake'
 gem 'shotgun', :group => :developer
